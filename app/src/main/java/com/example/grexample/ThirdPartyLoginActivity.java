@@ -179,7 +179,7 @@ public abstract class ThirdPartyLoginActivity extends AppCompatActivity {
     }
 
     protected void makeClassroomHelper() {
-        ArrayList<String> scopes = new ArrayList<>();
+        Set<String> scopes = new HashSet<>();
         scopes.add(ClassroomScopes.CLASSROOM_COURSES);
         scopes.add(ClassroomScopes.CLASSROOM_COURSEWORK_STUDENTS);
         GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this);
